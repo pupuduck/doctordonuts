@@ -116,3 +116,9 @@ h3, #items{
         padding: 50px;
     }
 }
+@media (max-width: 860px){
+    .text-container h2{
+        font-size: 1em;
+        margin: 3%;
+    }
+}

@@ -136,6 +136,7 @@
   .story{
     justify-content: center;
     flex-direction: column-reverse;
+    margin-bottom: 5em;
   }
   .image img{
     margin: 0;

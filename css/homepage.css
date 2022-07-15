@@ -178,6 +178,14 @@
 
 @media(max-width: 960px) {
   /* about us */
+  .aboutus-homepage{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5em;
+  }
+  .about-us{
+    margin-bottom: 3em;
+  }
   .aboutus-homepage img {
     float: none;
     margin: 0px;
@@ -201,6 +209,7 @@
   .menu-hompage{
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 5em;
   }
   .groupofimages img {
     width: 23vw;
