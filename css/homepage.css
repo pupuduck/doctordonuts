@@ -1,0 +1,256 @@
+/*start of brief about us*/
+/* main container */
+.main-container{
+  min-height: 40em;
+  font-family: MainFont;
+  background-image: url(../Images/donutbg\ \(3\).jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+.main-container h1{
+  color: rgb(232, 111, 176);
+  margin-bottom: 0;
+  margin-top: 13%;
+}
+.main-container h3{
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+}
+.text-container{
+  font-size: 3em;
+  width: 50%;
+  text-align: center;
+}
+.text-decoration{
+  display: flex;
+  justify-content: center;
+}
+.bi-asterisk{
+  color: rgb(232, 111, 176);
+  margin-top: -25px;
+  animation: rotate 1s forwards;
+}
+.left{
+  animation: side-left 1s forwards;
+}
+.right{
+  animation: side-right 1s forwards;
+}
+.line-head{
+  width: 10%;
+  height: 4px;
+  background-color: rgb(232, 111, 176);
+}
+/*image for about us*/
+.aboutus-homepage{
+  margin-bottom: 15em;
+}
+.aboutus-homepage img{
+  float: right;
+  border-radius: 1000px;
+  width: 500px;
+  height: 500px;
+  margin-right: 10%;
+  border: 1px;
+  margin-top: 10px;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.aboutus-homepage img:hover{
+  transform: scale(1.1);
+  transition:  0.3s;
+}
+/*end of image for about us*/
+/*words for about us*/
+.about-us h2{
+  font-size: 400%;
+  margin-bottom: 0px;
+  color: rgb(232, 111, 176);
+  font-family:'MainFont';
+}
+
+.about-us p{
+  margin-left: 10%;
+  margin-right: 50%;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: pictures 1s forwards;
+}
+
+.about-us{
+  text-align: center;
+}
+/*end of words for about us*/
+/*end of brief about us*/
+
+
+/*start of food brief*/
+.menu-hompage{
+  margin-bottom: 15em;
+}
+
+
+/*brief about menu*/
+.words-menu{
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 50%;
+}
+.words-menu h1{
+  font-family: 'MainFont';
+  font-size: 400%;
+  color: rgb(232, 111, 176);
+}
+
+
+.words-menu p{
+  font-size: 25px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: pictures 1s forwards;
+}
+.groupofimages img{
+  width: 260px;
+  height: 300px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  transform: scale(1);
+  transition: 0.5s;
+
+}
+.groupofimages img:hover {
+  transform:scale(1.2);
+  transition: 0.5s;
+  z-index: 1;
+}
+.groupofimages{
+  margin-left: 10%;
+  display: inline-grid;
+  grid-template-columns: repeat(2, [col-start] 1fr);
+  grid-gap: 10px;
+  float: left;
+}
+
+
+/*start of visit us brief*/
+.locate-homepage{
+  margin-bottom: 15em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#words-locate{
+  text-align: center;
+  margin-left: 10%;
+}
+#words-locate p{
+  font-size: large;
+}
+#words-locate h1{
+  font-family: 'MainFont';
+  font-size: 400%;
+  color: rgb(232, 111, 176);
+}
+#words-locate h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:25px;
+}
+#words-locate img{
+  width: 100px;
+  height:100px;
+}
+#iframe-container{
+  margin-right: 10%;
+  width: 40%;
+  margin-top: 6%;
+  height: 400px;
+}
+#iframe-container iframe{
+  width: 100%;
+  height: 100%;
+} 
+
+
+
+
+
+/*end of locate brief*/
+
+@media(max-width: 960px) {
+  /* about us */
+  .aboutus-homepage img {
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0;
+    width: 100%;
+  }
+  .aboutus-homepage img:hover{
+    transform: none;
+  }
+  .about-us h2, .about-us p, #aboutus-homepage{
+    margin: 0px;
+    padding: 0px;
+  }
+  .about-us p{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* end of about us*/
+  /* menu */
+  .menu-hompage{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .groupofimages img {
+    width: 23vw;
+    height: 20vh;
+    margin: 0px;
+    padding: 0px;
+  }
+  .groupofimages {
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    grid-gap: 0;
+  }
+  .words-menu{
+    text-align: center;
+    margin: 4px;
+    padding: 0px;
+  }
+  .locate-homepage{
+    flex-direction: column;
+  }
+  #iframe-container{
+    
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+  }
+  #iframe-container iframe{
+    margin: 0;
+  }
+  #words-locate{
+    margin: 0;
+  }
+}
+@media (max-width: 845px){
+  .text-container{
+    width: 100%;
+  }
+}
+/*end of brief of menu*/
+
+
+/*styling of links*/
+#link{
+  font-size: 150%;
+  color: gray;
+}
+#link:hover{
+  color: black;
+}
+/*end of styling of list*/

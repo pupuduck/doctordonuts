@@ -1,0 +1,118 @@
+/* adding background */
+
+#menu{
+    padding: 150px 400px 300px;
+    
+}
+.container{
+    background-image: url(../Images/donutstorebackground-modified.webp);
+    background-size: cover;
+}
+/* intro to menu */
+.introduction-container{
+    padding: 0.1px;
+    height: 25em;
+    
+    text-align: center;
+}
+.text-container{
+    margin-top: 5%;
+    font-family: MainFont;
+    font-size: 250%;
+    
+}
+.introduction-container h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 130px;
+    color: rgb(223, 93, 162);
+}
+.introduction-container h2{
+    color: azure;
+}
+.text-deco{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    height: 3px;
+    width: 85px;
+    background-color: rgb(236, 71, 159);
+    margin: 0;
+    margin-top: 20px;
+}
+.left{
+    animation: side-left 1s forwards;
+}
+.right{
+    animation: side-right 1s forwards;
+}
+.bi-asterisk{
+    color: rgb(236, 71, 159);
+    animation: rotate 1s forwards
+}
+/* styling buttons */
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+#menu1, #menu2, #menu3{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid saddlebrown;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'MainFont';
+    font-size: 2em;
+    margin-bottom: -2px;
+}
+#menu1:hover, #menu2:hover, #menu3:hover{
+    color: saddlebrown;
+    background-color: white
+}
+
+
+/* onclick and hover buttons */
+.addbackground{
+    color: saddlebrown;
+    background-color: beige;
+}
+.removebackground{
+    color: white;
+    background-color:rgb(253, 152, 189);
+}
+
+
+/* styling menu */
+#itemname{
+    font-size: 2em;
+    font-family: 'MainFont';
+    margin-left: 10px;
+}
+h3{
+    font-size: 1;
+    margin-left: 10px;
+    margin-top: -5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#price{
+    float: right;
+    margin-right: 10px;
+    font-size: 30px;
+}
+#items{
+    border: 1px solid saddlebrown;
+    background-color: white;
+
+}
+h3, #items{
+    color:saddlebrown;
+}
+
+@media (max-width: 1660px) {
+    #menu {
+        padding: 50px;
+    }
+}

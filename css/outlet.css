@@ -1,0 +1,78 @@
+#heading{
+  text-align: center;
+}
+.left{
+  animation: side-left 1s forwards;
+}
+.right{
+  animation: side-right 1s forwards;
+}
+.bi-asterisk{
+  animation: rotate 1s forwards;
+  margin-top: -15px;
+  font-size: 200%;
+  color: rgb(232, 111, 176);
+}
+.text-decoration{
+  display: flex;
+  justify-content: center;
+  margin-top: 2em ;
+}
+.line-head{
+  width: 10%;
+  height: 4px;
+  background-color: rgb(232, 111, 176);
+}
+#stores table{
+  margin: auto;
+}
+#heading p{
+  width: 40%;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#heading h2, #heading h3{
+  font-family: "MainFont";
+  color: rgb(223, 93, 162);
+  margin-top: 0px;
+}
+#heading h2{
+  font-size: 400%;
+  margin-bottom: -2%;
+}
+#heading h3{
+  font-size: 300%;
+  margin-bottom: 0px;
+}
+#heading p,  table{
+  font-size: 20px;
+}
+table{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+td{
+  padding: 30px
+}
+
+#right, #left{
+  animation: intro 1s forwards;
+}
+#stores{
+  background-image: url(../Images/donutstorebackground-modified.webp);
+  background-size: cover;
+}
+@media(max-width: 960px){
+  #heading p{
+    width: 80%
+  }
+}
+
+
+@keyframes intro{
+  from{
+    transform: scale(0.1);
+  }
+  to{
+    transform: scale(1);
+  }
+}

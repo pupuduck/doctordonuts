@@ -1,0 +1,195 @@
+/*start of first body content*/
+.background img{
+  width: 100%;
+  margin: 0px;
+  display: flex;
+}
+#content{
+  width: 100%;
+  background-color: rgba(210, 216, 221, 0.61);
+  margin-top: 2em;
+}
+.body-content{
+  background-image: url(../Images/../Images/donutbg3.jpg);
+  overflow-x: hidden;
+  background-size: cover;
+  min-height: 600px;
+  text-align: center;
+  margin-bottom: 7em;
+}
+#content{
+  font-family: MainFont;
+  font-size: 3rem;
+}
+#content h2{
+  margin: 0;
+  color: rgb(232, 111, 176);
+}
+#content h3{
+  color: white;
+}
+.left{
+  animation: side-left 1s forwards;
+}
+.right{
+  animation: side-right 1s forwards;
+}
+.bi-asterisk{
+  animation: rotate 1s forwards;
+  margin-top: -20px;
+  color: rgb(232, 111, 176);
+}
+.text-decoration{
+  display: flex;
+  justify-content: center;
+}
+.line-head{
+  width: 10%;
+  height: 4px;
+  background-color: rgb(232, 111, 176);
+}
+.paragraph{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+}
+/*end of first body content*/
+.story{
+  display: flex;
+  margin-bottom: 10em;
+  justify-content: space-between;
+}
+.text-content{
+  font-family: MainFont;
+  font-size: 200%;
+  text-align: center;
+  width: 50%;
+  margin-right: 4em;
+}
+.text-content h1{
+  color: saddlebrown;
+}
+.image img{
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  margin-left: 10em;
+  margin-right: 14em;
+}
+
+/*start of second body content*/
+#body-content-2 iframe {
+  border-radius: 10px;
+  width: 35%;
+}
+#body-content-2 h1{
+  font-family: "MainFont";
+  color: saddlebrown;
+  font-size: 500%;
+  text-align: center;
+}
+#paragraph-2 p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+#paragraph-2 a{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+#paragraph-2 a:hover{
+  color: white;
+  transition: 0.5s;
+}
+#paragraph-2{
+  float: left;
+  margin-left: 7%;
+
+}
+#video {
+  text-align: right;
+  margin-right: 10%;
+}
+#content-2 {
+  margin: 20px;
+  
+}
+/*end of second body content*/
+@media (max-width: 1350px){
+
+  #paragraph-2{
+    float: none;
+    margin: 0px
+  }
+  #video{
+    display: flex;
+    margin: 3%;
+    
+  }
+  #video iframe{
+    width: 100%;
+    justify-content: center;
+  }
+  .story{
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .image img{
+    margin: 0;
+    width: 70%;
+    border-radius: 5%;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+  }
+  .text-content{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .paragraph {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    left: 0px;
+  }
+  #video{
+    flex-direction: column;
+    padding: 25px;
+  }
+  .image img{
+    height: 500px;
+    width: 100%;
+  }
+  .about-header {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    left: 0px;
+
+  }
+}
+@keyframes body{
+  from{
+    transform: translateY(-300%);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+@keyframes title{
+  from{
+    transform: translateY(500%);
+    visibility: hidden;
+  }
+  to{
+    transform: translateY(0);
+    visibility:visible;
+  }
+}
