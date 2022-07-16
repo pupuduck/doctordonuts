@@ -152,15 +152,26 @@ body{
 #bottomofpage{
   display:flex;
   justify-content: space-between;
-  background-color: rgb(247, 137, 190);;
+  background-color: rgb(247, 137, 190);
   width: 100%;
-  height: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 160px;
+  font-family: navFont;
   font-weight: bold;
   padding: 0%;
 }
+#right a{
+  margin: 15px;
+}
+
 #left, #right{
   padding-top: 40px;
+}
+#right i{
+  font-size: 1.6em;
+  color: black;
+}
+#right i:hover{
+  color: white;
 }
 #left{
   padding-left: 60px;
@@ -173,7 +184,7 @@ body{
 @media (max-width: 630px){
   #bottomofpage{
     text-align: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 10px;
     width: auto;
   }
@@ -181,12 +192,7 @@ body{
     padding: 0px;
   }
 }
-@keyframes text{
-  from{transform: scale(0.1);
-        transform: scaleY(-100%);}
-  to {transform: scale(1);
-  transform: scaleY(100%);}
-}
+
 @keyframes logo{
   from{
     transform: scale(0.1);
@@ -195,7 +201,7 @@ body{
     transform: scale(1);
   }
 }
-@keyframes pictures{
+@keyframes grow{
   from{
     transform: scale(0.1);
   }
@@ -203,22 +209,7 @@ body{
     transform: scale(1);
   }
 }
-@keyframes side-left{
-  from{
-      transform: scale(0.1);
-  }
-  to{
-      transform: scale(1);
-  }
-}
-@keyframes side-right{
-  from{
-      transform: scale(0.1);
-  }
-  to{
-      transform: scale(1)
-  }
-}
+
 @keyframes rotate{
   from{
       transform: rotate(0deg);

@@ -28,7 +28,7 @@
     color: rgb(223, 93, 162);
 }
 .introduction-container h2{
-    color: azure;
+    color: rgb(255, 255, 255);
 }
 .text-deco{
     display: flex;
@@ -42,10 +42,10 @@
     margin-top: 20px;
 }
 .left{
-    animation: side-left 1s forwards;
+    animation: grow 1s forwards;
 }
 .right{
-    animation: side-right 1s forwards;
+    animation: grow 1s forwards;
 }
 .bi-asterisk{
     color: rgb(236, 71, 159);
