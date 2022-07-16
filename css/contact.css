@@ -190,9 +190,10 @@
 }
 @media (max-width: 500px){
     .popup{
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
         width: 20em;
-        height: 45%;
+
     }
 
 }
