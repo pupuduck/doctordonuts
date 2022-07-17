@@ -15,18 +15,43 @@
 #container h1 {
     text-align: center;
     font-family: "MainFont";
-    color: saddlebrown;
     font-size: 250%;
+    color: rgb(232, 111, 176);
+    margin-bottom: 0;
 }
 #headingall{
     text-align: center;
     margin-bottom: 0;
     font-family: "MainFont";
     font-size: 200%;
-    color: saddlebrown;
+    color: rgb(232, 111, 176);
+    
 }
-#headingall h1{
-    margin-top: 0px;
+#headingall h1, #headingall h3{
+    margin: 0;
+}
+#headingall h3{
+    color: white;
+}
+.left{
+    animation: grow 1s forwards;
+}
+.right{
+    animation: grow 1s forwards;
+}
+.bi-asterisk{
+    animation: rotate 1s forwards;
+    margin-top: -20px;
+    color: rgb(232, 111, 176);
+}
+.text-decoration{
+    display: flex;
+    justify-content: center;
+}
+.line-head{
+    width: 10%;
+    height: 4px;
+    background-color: rgb(232, 111, 176);
 }
 /* end container */
 
@@ -48,13 +73,13 @@
     width: 20%;
     margin: auto;
     height: 5px;
-    background-color: rgb(179, 89, 26);
+    background-color: rgb(232, 111, 176);
 }
 .underline2{
     width: 10%;
     margin: auto;
     height: 5px;
-    background-color: rgb(179, 89, 26);
+    background-color: rgb(232, 111, 176);
 }
 #textarea{
     border: 3px solid lightgray;
@@ -111,7 +136,7 @@
     width: 15%;
     padding: 5px;
     border: none;
-    background-color: rgba(233, 48, 48, 0.486);
+    background-color: rgb(167, 159, 165);
     transform: scale(1);
     transition: 0.5s;
     
