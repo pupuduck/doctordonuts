@@ -31,10 +31,10 @@
   animation: rotate 1s forwards;
 }
 .left{
-  animation: side-left 1s forwards;
+  animation: grow 1s forwards;
 }
 .right{
-  animation: side-right 1s forwards;
+  animation: grow 1s forwards;
 }
 .line-head{
   width: 10%;
