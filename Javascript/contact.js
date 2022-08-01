@@ -12,6 +12,7 @@ form.addEventListener("submit", () => {
     field2.classList.add("remove-field");
     heading.classList.add("remove-field");
     document.getElementById("name-input").innerHTML = document.getElementById("name").value;
+    document.getElementById("email-input").innerHTML = document.getElementById("email").value;
 })
 
 
